@@ -1,3 +1,4 @@
 Makefile
 driver
 ./objects/*.o
+.DS_Store
