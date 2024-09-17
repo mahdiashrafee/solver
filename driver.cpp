@@ -6,30 +6,32 @@
 
 
 int main(){
-    int input;
+    char input;
     int *array = nullptr;
 
     while(true){
         print();
         std::cin>>input;
+
         switch(input){
-            case 1:
-                printArray(array,7);
+            case '1':
+                if(array)
+                    printArray(array,7);
                 break;
-            case 2:
+            case '2':
                 array = getInput();
                 break;   
-            case 3: 
+            case '3': 
                 printArray(array,7);
                 bubbleSort(array, 7);
                 printArray(array, 7);
                 break;
-            case 4:
+            case '4':
                 printArray(array,7);
                 selectionSort(array, 7);
                 printArray(array, 7);
                 break;
-            case 15:
+            case '9':
                 return 0;
                 break;
             default:

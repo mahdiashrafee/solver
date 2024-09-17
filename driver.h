@@ -7,7 +7,7 @@ void print(){
      std::cout<<"3. Bubble Sort the Info\n";
      std::cout<<"4. Selection Sort the Info\n";
 
-     std::cout<<"15. Exit\n";
+     std::cout<<"9. Exit\n";
      std::cout<<":";
 }
 void printArray(int* array, int size){

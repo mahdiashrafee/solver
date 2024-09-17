@@ -24,5 +24,15 @@ void selectionSort(int* array, int size){
     usleep(2000000);
     int currMinimum = 0;
     int currPos = 0;
-
+  for(int j = 0; j<size; j++){
+    for(;currPos<size; currPos++){
+        if(array[currMinimum]>array[currPos]){
+            currMinimum = currPos;
+        }
+    }
+    swap(array[currMinimum],array[j]);
+    currMinimum = j+1;
+    currPos =j+1;
+      
+  } 
 }
