@@ -20,23 +20,16 @@ int main(){
                 break;
             case '2':
                 array = getInput();
-                break;   
-            case '3': 
-                printArray(array,7);
-                bubbleSort(array, 7);
-                printArray(array, 7);
                 break;
+           // case '3'://treeInput
             case '4':
-                printArray(array,7);
-                selectionSort(array, 7);
-                printArray(array, 7);
-                break;
-            case '5':
-                printArray(array,7);
-                insertionSort(array, 7);
-                printArray(array, 7);
-                break;
-            case '9':
+                printSorts();
+                optionsSorts(array);  
+            //case '6': //Search    
+            //case '5': //advancedSorts
+            //case '7': //advancedSearch
+            
+            case '8':
                 return 0;
                 break;
             default:

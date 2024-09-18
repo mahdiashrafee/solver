@@ -1,13 +1,17 @@
+#ifndef DRIVER_H
+#define DRIVER_H
 #include <iostream>
 
 void print(){
      std::cout<<"Options: \n";
      std::cout<<" 1. Display Info\n";
-     std::cout<<" 2. Enter Info\n";
-     std::cout<<" 3. Bubble Sort the Info\n";
-     std::cout<<" 4. Selection Sort the Info\n";
-     std::cout<<" 5. Insertion Sort the Info\n";
-     std::cout<<" 9. Exit\n";
+     std::cout<<" 2. Enter Info in an Array\n";
+     std::cout<<" 3. Enter Info in a Tree\n";
+     std::cout<<" 4. Do Sorts\n";
+     std::cout<<" 5. Do Searches\n";
+     std::cout<<" 6. Do Advanced Sorts\n";
+     std::cout<<" 7. Do Advanced Searches\n";
+     std::cout<<" 8. Exit\n";
      std::cout<<":";
 }
 void printArray(int* array, int size){
@@ -24,3 +28,4 @@ int* getInput(){
     }
     return &array[0];
 }
+#endif

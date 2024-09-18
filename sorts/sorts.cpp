@@ -1,5 +1,41 @@
 //implimentation of array
 #include "sorts.h"
+
+
+void printSorts(){
+    std::cout<<"Options: \n";
+    std::cout<<" 1. Bubble Sort the Info\n";
+    std::cout<<" 2. Selection Sort the Info\n";
+    std::cout<<" 3. Insertion Sort the Info\n";
+    std::cout<<" 4. Go back\n"; 
+    std::cout<<":";    
+}
+void optionsSorts(int* array){
+    char input;
+     while(true){
+        std::cin>>input;
+         switch(input){
+            case '1': 
+                printArray(array,7);
+                bubbleSort(array, 7);
+                printArray(array, 7);
+                break;
+            case '2': 
+                printArray(array,7);
+                selectionSort(array, 7);
+                printArray(array, 7);
+                break;
+            case '3':
+                printArray(array,7);
+                selectionSort(array, 7);
+                printArray(array, 7);
+                break;
+            case '4':
+                return;   
+            printSorts();
+         }
+     }
+}
 void swap(int &First, int &Second){
     int temp = First;
     First = Second;
@@ -9,8 +45,8 @@ void swap(int &First, int &Second){
 }
 
 void bubbleSort(int* array, int size){
-    std::cout<<"Bubble Sort in Process\n"; //for animation
-    usleep(2000000);
+    std::cout<<"Bubble Sort in Process\n"; 
+    usleep(2000000);//for animation
     for(int i = 0; i<size; i++){
         for(int i = 0; i<size-1; i++){
             if(array[i]>array[i+1]){
@@ -21,8 +57,8 @@ void bubbleSort(int* array, int size){
     std::cout<<"Sorted ";
 }
 void selectionSort(int* array, int size){
-  std::cout<<"Selection Sort in Process\n"; //for animation
-  usleep(2000000);
+  std::cout<<"Selection Sort in Process\n";
+  usleep(2000000); //for animation
 
   for(int j = 0; j<size-1; j++){
     int currMinimum = j;
@@ -36,5 +72,10 @@ void selectionSort(int* array, int size){
   std::cout<<"Sorted ";
 }
 void insertionSort(int* array, int size){
-    std::cout<<"Insertion Sort Here";
+    std::cout<<"Insertion Sort in Process\n";
+    usleep(2000000); //for animation
+
+    for(int i = 0; i<size; i++){
+
+    }
 }
