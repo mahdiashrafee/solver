@@ -18,21 +18,23 @@ void bubbleSort(int* array, int size){
             }
     }
     }
+    std::cout<<"Sorted ";
 }
 void selectionSort(int* array, int size){
-     std::cout<<"Selection Sort in Process\n"; //for animation
-    usleep(2000000);
-    int currMinimum = 0;
-    int currPos = 0;
-  for(int j = 0; j<size; j++){
-    for(;currPos<size; currPos++){
+  std::cout<<"Selection Sort in Process\n"; //for animation
+  usleep(2000000);
+
+  for(int j = 0; j<size-1; j++){
+    int currMinimum = j;
+    for(int currPos = j+1 ;currPos<size; currPos++){
         if(array[currMinimum]>array[currPos]){
             currMinimum = currPos;
         }
     }
     swap(array[currMinimum],array[j]);
-    currMinimum = j+1;
-    currPos =j+1;
-      
   } 
+  std::cout<<"Sorted ";
+}
+void insertionSort(int* array, int size){
+    std::cout<<"Insertion Sort Here";
 }

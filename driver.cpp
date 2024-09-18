@@ -31,6 +31,11 @@ int main(){
                 selectionSort(array, 7);
                 printArray(array, 7);
                 break;
+            case '5':
+                printArray(array,7);
+                insertionSort(array, 7);
+                printArray(array, 7);
+                break;
             case '9':
                 return 0;
                 break;
